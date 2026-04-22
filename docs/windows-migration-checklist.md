@@ -3,17 +3,17 @@
 Use this as the execution tracker for the Windows app project.
 
 ## Phase 1: Scope and Matrix
-- [ ] Inventory current Linux feature set and map source files.
-- [ ] Build `Keep / Adapt / Drop` matrix.
-- [ ] Approve Windows replacements for each adapted feature.
-- [ ] Define V1 out-of-scope list.
-- [ ] Freeze V1 feature contract.
+- [x] Inventory current Linux feature set and map source files.
+- [x] Build `Keep / Adapt / Drop` matrix.
+- [x] Approve Windows replacements for each adapted feature.
+- [x] Define V1 out-of-scope list.
+- [x] Freeze V1 feature contract.
 
 ## Phase 2: Architecture Refactor
-- [ ] Create provider interfaces for all service domains.
-- [ ] Extract Linux implementation into provider modules.
-- [ ] Add Windows provider skeleton classes.
-- [ ] Add provider selection logic by platform.
+- [x] Create provider interfaces for all service domains.
+- [x] Extract Linux implementation into provider modules.
+- [x] Add Windows provider skeleton classes.
+- [x] Add provider selection logic by platform.
 - [ ] Confirm Linux app behavior remains unchanged after refactor.
 
 ## Phase 3: Windows Read-Only Services
@@ -61,7 +61,7 @@ Use this as the execution tracker for the Windows app project.
 - [ ] Produce release candidate and sign-off checklist.
 
 ## Acceptance Gates
-- [ ] Gate A: V1 scope approved.
+- [x] Gate A: V1 scope approved.
 - [ ] Gate B: Windows read-only parity approved.
 - [ ] Gate C: Privileged action safety approved.
 - [ ] Gate D: Packaging/install flow approved.

@@ -37,6 +37,28 @@ pip install -e .
 python -m windows_system_manager.main
 ```
 
+## Testing (Linux Dev Host)
+```bash
+source .venv/bin/activate
+pip install -e ".[dev]"
+pytest -q
+```
+
+If you only want backend/provider tests on a headless Linux machine:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pytest psutil
+pip install -e . --no-deps
+pytest -q
+```
+
+Provider override checks:
+```bash
+WSM_PROVIDER=linux pytest -q
+WSM_PROVIDER=windows pytest -q tests/test_provider_resolution.py
+```
+
 ## Roadmap Documents
 - `docs/windows-migration-plan.md`
 - `docs/windows-migration-checklist.md`
